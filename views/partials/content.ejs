@@ -1,0 +1,107 @@
+<!-- Home -->
+<% if(title == "Home"){%>
+    <div class="homebg">
+        <div class="homeinfo">
+            <div class="student"><img src="/Assets/images/studentcard.PNG" alt=""></div>
+        </div>
+        
+        <div class="link">
+            <ul>
+                <li><a class="nav-link active"aria-current="page" href="/home"><i class="fas fa-laptop-house"></i> Home</a></li>
+                <li><a class="nav-link active"aria-current="page" href="/about"><i class="fas fa-info-circle"></i> About me</a></li>
+                <li><a class="nav-link active"aria-current="page" href="/projects"><i class="fab fa-elementor"></i> Project</a></li>
+                <li><a class="nav-link active"aria-current="page" href="/services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a class="nav-link active"aria-current="page" href="/contact"><i class="fas fa-mobile-alt"></i> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+<%}else{ %>
+    <% } %>
+<!-- About -->
+<% if(title == "About"){%>
+    <ul class="personinfor">
+        <li><b>Name:</b> Chen Jiang</li>
+        <li><b>Program:</b>  3408</li>
+        <li><b>Student number:</b> 301082999</li>
+        <li><b>Section:</b> 002</li>
+        <li><b>Why do i want to learn in this program?</b></li>
+        <li>I want to learn how to design a good website and upload it to the internet in this program.</li>
+        <li><b>Resume: </b><a href="/Assets/ChenJiangResume.pdf">ChenJiangResume.pdf</a></li>
+    </ul>
+<%}else{ %>
+    <% } %>
+<!-- Projects -->
+<% if(title == "Projects"){%>
+    <ul class="projects">
+        <li>
+            <div><b>HTML/CSS: </b><br>
+                <a href="https://world.taobao.com/"><img src="/Assets/images/taobao.PNG" alt=""></a></div>
+        </li>
+        <li>
+            <div><b>JS (Game): </b><br>
+                <a href="/Assets/pug/assignment5.html"><img src="/Assets/images/pug.PNG" alt=""></a></div>
+        </li>
+        <li>
+            <div><b>JS (Survey): </b><br>
+                <a href="/Assets/survey/assignment4.html"><img src="/Assets/images/survey.PNG" alt=""></a></div>
+        </li>
+    </ul>
+<%}else{ %>
+    <% } %>
+<!-- Services -->
+<% if(title == "Services"){%>
+    <ul class="services">
+        <li><i class="fas fa-laptop"></i></i> <b>General Programming</b><br>
+            <img src="/Assets/images/programming.png" alt="">
+        </li>
+        <li><i class="far fa-window-restore"></i> <b>Web Development</b><br>
+            <img src="/Assets/images/WebDevelopment.jpg" alt="">
+        </li>
+        <li><i class="fas fa-mobile"></i> <b>Mobile Apps</b><br>
+            <img src="/Assets/images/mobileapp.jpg" alt="">
+        </li>
+    </ul>
+<%}else{ %>
+    <% } %>
+<!-- Contact -->
+<% if(title == "Contact"){%>
+    <div class="contact">
+        <div class="contactsurvey">
+            <div><h1>Contact me</h1></div>
+            <div class="contactborder"></div>
+            <div class="contactname">
+                <label for="name">Name</label><br>
+                <input name="name" id="name" type="text" placeholder="Your name..." required="">
+            </div>
+            <div class="contactemail">
+                <label for="email" class="font-weight-bold">Email address</label><br>
+                <input name="email" id="email" type="email" placeholder="Your email..."  required="">
+            </div>
+            <div class="contactphone">
+                <label for="email" class="font-weight-bold">Phone number</label><br>
+                <input name="email" id="email" type="email" placeholder="Your email..."  required="">
+            </div>
+            <div class="contactmessage">
+                <label for="comments" class="font-weight-bold">Message</label><br>
+                <textarea name="comments" id="comments" rows="4" placeholder="Your message..." required=""></textarea>
+            </div>
+            <div class="contactsend">
+                <a href="/home"><input type="submit" value="Send"></a>
+            </div>
+        </div>
+        <div class="contactinfo">
+            <ul>
+                <li>
+                    <div class="name"><i class="fas fa-user-circle"></i> Name: Chen Jiang</div>
+                </li>
+                <li>
+                    <div class="email"><i class="fas fa-envelope"></i> E-mail: <a href="mailto:88888888@gmail.com">88888888@gmail.com</a></div>
+                </li>
+                <li>
+                    <div class="phone"><i class="fas fa-phone"></i> Phone: 1-437-xxx-xxxx</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<%}else{ %>
+    <% } %>
